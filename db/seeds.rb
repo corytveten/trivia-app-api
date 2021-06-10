@@ -1,0 +1,18 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+question_a = Question.create(category: 'Business', style: 'multiple', difficulty: 'hard', question: 'Which company is responsible for the animal toy fad introduced in 1993 as Beanie Babies?', correct_answer: 'Ty', incorrect_answers: ['Billund', 'Bandai', 'Wizkids'])
+question_b = Question.create(category: 'Religion', style: 'multiple', difficulty: 'hard', question: 'Which of the Apostles of Jesus Christ had been employed as a tax collector in Galilee?', correct_answer: 'Matthew', incorrect_answers: ['Peter', 'Luke', 'Judas'])
+question_c = Question.create(category: 'TV', style: 'multiple', difficulty: 'hard', question: 'Who sang the western theme song for the TV series Rawhide and the film Blazing Saddles?', correct_answer: 'Frankie Laine', incorrect_answers: ['Tex Ritter', 'Roy Rogers', 'Gene Autry'])
+question_d = Question.create(category: 'Geography', style: 'multiple', difficulty: 'hard', question: 'The Gila Cliff Dwellings National Monument is located near the mouth of the Gila River in which U.S. state?', correct_answer: 'New Mexico', incorrect_answers: ['Colorado', 'Arizona', 'California'])
+question_e = Question.create(category: 'Theatre', style: 'multiple', difficulty: 'hard', question: 'Who attempted to revolutionize theater with the creation of his Theatre of Cruelty in his 1938 book The Theatre and Its Double?', correct_answer: 'Antonin Artaud', incorrect_answers: ['Lee Strasberg', 'Eugene Ionesco', 'Marc Blitstein'])
+question_f = Question.create(category: 'Music', style: 'multiple', difficulty: 'hard', question: 'Which singer appeared as a regular on the 1970s sitcom Good Times and later as a teenager on the dance-oriented series Fame?', correct_answer: 'Janet Jackson', incorrect_answers: ['Paula Abdul', 'Alanis Morissette', 'Puff Daddy'])
+question_g = Question.create(category: 'Movies', style: 'multiple', difficulty: 'hard', question: 'Which British actress exhibited herself sleeping in a glass case for a week at the Serpentine Gallery in England?', correct_answer:'Tilda Swinton', incorrect_answers: ['Glenda Jackson', 'Helena Bonham Carter', 'Emily Watson'])
+question_h = Question.create(category: 'Sports', style: 'multiple', difficulty: 'hard', question: 'Which tennis player made a career comeback in 2001, winning her first Grand Slam singles titles, the Australian Open and the French Open?', correct_answer:'Jennifer Capriati', incorrect_answers: ['Tracy Austin', 'Kim Clijsters', 'Hana Mandlikova'])
+question_i = Question.create(category: 'Movies', style: 'multiple', difficulty: 'hard', question: "In the 1930s, which actor's film roles included Nero, Henry VIII, Captain Bligh, and Quasimodo?", correct_answer: 'Charles Laughton', incorrect_answers: ['Paul Muni', 'Leslie Howard', 'Paul Henreid'])
+question_j = Question.create(category: 'History', style: 'multiple', difficulty: 'hard', question: 'Which country had "Papa Doc" Duvalier as its president from 1957 to 1971, and "Baby Doc" Duvalier as president from 1971 to 1986?', correct_answer: 'Haiti', incorrect_answers: ['Argentina', 'Brazil', 'Chile'])
+quesion_k = Question.create(category: 'Sports', style: 'multiple', difficulty: 'hard', question: 'Which NASCAR driver became the youngest winner of the Daytona 500 in 1997 at age 25?', correct_answer: 'Jeff Gordon', incorrect_answers: ['Jimmie Johnson', 'Matt Kenseth', 'Dale Earnhardt Jr.'])
