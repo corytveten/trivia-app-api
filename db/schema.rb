@@ -10,17 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_10_022725) do
+ActiveRecord::Schema.define(version: 2021_06_13_214453) do
 
   create_table "questions", force: :cascade do |t|
     t.string "category"
     t.string "difficulty"
     t.string "question"
     t.string "correct_answer"
-    t.string "incorrect_answers"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.string "style"
+    t.string "incorrect_answer_a"
+    t.string "incorrect_answer_b"
+    t.string "incorrect_answer_c"
   end
 
 end
