@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_06_13_214453) do
+ActiveRecord::Schema.define(version: 2021_06_14_024327) do
 
   create_table "questions", force: :cascade do |t|
     t.string "category"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 2021_06_13_214453) do
     t.string "incorrect_answer_a"
     t.string "incorrect_answer_b"
     t.string "incorrect_answer_c"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
   end
 
 end
