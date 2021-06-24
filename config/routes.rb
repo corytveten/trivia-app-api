@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/' => 'users#index'
+  get '/:username', to: 'users#show'
 
   resources :users
   resources :questions
