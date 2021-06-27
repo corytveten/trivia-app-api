@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :users
   resources :questions
 
+  post '/signup', to: 'users#create'
   get '/login', to: 'sessions#new'
   post '/login', to: 'sessions#create'
   post '/logout', to: 'sessions#destroy'

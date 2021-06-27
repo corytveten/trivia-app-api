@@ -1,8 +1,9 @@
+require 'pry'
 class SessionsController < ApplicationController
 
-    # def new
-    #     user = User.new
-    # end
+    def new
+        user = User.new
+    end
 
     def create
         user = User.find_by(:username => params[:session][:username])
@@ -10,7 +11,7 @@ class SessionsController < ApplicationController
             session[:user_id] = user.id
             render json: user
         else
-            render: json: {
+            render json: {
                 error: 'Invalid credentials.'
             }
         end
@@ -18,8 +19,8 @@ class SessionsController < ApplicationController
 
     def destroy
         session.clear
-        render json {
-            notics: 'You have logged out.'
+        render json: {
+            notice: 'You have logged out.'
         }
     end
 
