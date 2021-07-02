@@ -1,24 +1,6 @@
-# README
+THis is the backend for a react trivia app found at:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+https://github.com/corytveten/react-trivia-app
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run this rails back end with the command:
+rails s -p 4000
